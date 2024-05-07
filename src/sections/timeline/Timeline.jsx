@@ -1,16 +1,16 @@
 import './Timeline.css';
 import React, { useState } from 'react';
 
-import Background from '../../images/timeline/Background.jpg'
+import Background from '../../images/timeline/Background.jpg';
 
-import GreatFire from '../../images/timeline/GreatFire.jpeg'
-import ErieCanal from '../../images/timeline/ErieCanal.jpg'
-import CentralPark from '../../images/timeline/CentralPark.jpeg'
-import Riots from '../../images/timeline/Riots.jpg'
-import BrooklynBridge from '../../images/timeline/BrooklynBridge.jpg'
-import EllisIsland from '../../images/timeline/EllisIsland.jpeg'
-import FactoryFire from '../../images/timeline/FactoryFire.png'
-import September11 from '../../images/timeline/September11.webp'
+import GreatFire from '../../images/timeline/GreatFire.jpeg';
+import ErieCanal from '../../images/timeline/ErieCanal.jpg';
+import CentralPark from '../../images/timeline/CentralPark.jpeg';
+import Riots from '../../images/timeline/Riots.jpg';
+import BrooklynBridge from '../../images/timeline/BrooklynBridge.jpg';
+import EllisIsland from '../../images/timeline/EllisIsland.jpeg';
+import FactoryFire from '../../images/timeline/FactoryFire.png';
+import September11 from '../../images/timeline/September11.webp';
 
 const Timeline = () => {
   const [activeEventIndex, setActiveEventIndex] = useState(0);
@@ -75,7 +75,7 @@ const Timeline = () => {
 
   return (
     <div className='timeline'>
-      <img src={Background} alt="" className='background-img' />
+      <img src={Background} alt='' className='background-img' />
       <div className='left'>
         <h2>Important Events in NYC History</h2>
         <div className='events-container'>
@@ -83,6 +83,7 @@ const Timeline = () => {
             {events.map((item, index) => {
               return (
                 <li
+                  key={index}
                   className={`event-dot ${
                     index === activeEventIndex ? 'active' : ''
                   }`}

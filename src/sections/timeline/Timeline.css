@@ -1,6 +1,6 @@
 .timeline {
   display: flex;
-  min-height: 100vh;
+  position: relative;
 }
 
 .timeline .background-img {
@@ -12,10 +12,12 @@
 
 .timeline .left {
   width: 60%;
+  padding: 1rem;
 }
 
 .timeline .right {
   width: 40%;
+  padding: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
@@ -39,7 +41,7 @@
 
 .timeline h3 {
   font-size: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -118,7 +120,78 @@
   transition: 0.25s opacity ease;
 }
 
-.event-dot:hover .event-name, .event-dot.active .event-name,
-.event-dot:hover .event-date, .event-dot.active .event-date {
+.event-dot:hover .event-name,
+.event-dot.active .event-name,
+.event-dot:hover .event-date,
+.event-dot.active .event-date {
   opacity: 1;
+}
+
+@media (max-width: 1250px) {
+  .timeline h2 {
+    font-size: 2rem;
+  }
+
+  .timeline h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .timeline .description {
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .timeline h2 {
+    font-size: 1.5rem;
+  }
+
+  .timeline .left {
+    width: 50%;
+  }
+
+  .timeline .right {
+    width: 50%;
+  }
+
+  .events-container {
+    padding-right: 7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .timeline {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .timeline .left {
+    width: 100%;
+  }
+
+  .timeline .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline .right img {
+    display: none;
+  }
+
+  .timeline .right {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .event-date {
+    right: 25px;
+  }
+  .event-name {
+    left: 30px;
+  }
 }
