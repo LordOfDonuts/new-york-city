@@ -1,0 +1,204 @@
+.fun-facts {
+  position: relative;
+  background-color: blue;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-image: url('../../images/fun-facts/Background.png');
+  background-size: cover;
+}
+
+.fun-facts h2 {
+  text-align: center;
+  top: 2rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 275px);
+  grid-template-rows: repeat(3, 220px);
+  gap: 1.5rem;
+}
+
+.fun-facts .grid-item {
+  position: relative;
+  color: #000;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fun-facts .grid-item .fade-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.fun-facts .grid-item:hover .fade-screen {
+  opacity: 0.6;
+}
+
+.fun-facts .grid-item .item-title {
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1.65rem;
+  font-weight: 900;
+  user-select: none;
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+.fun-facts .grid-item:hover .item-title {
+  opacity: 0;
+}
+
+.fun-facts .grid-item .item-description {
+  position: absolute;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  z-index: 2;
+  color: #fff;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.fun-facts .grid-item:hover .item-description {
+  opacity: 1;
+}
+
+.fun-facts .grid-item.a {
+  background-image: url('../../images/fun-facts/Globe.jpg');
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+}
+
+.fun-facts .grid-item.b {
+  background-image: url('../../images/fun-facts/Subway.jpg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.c {
+  background-image: url('../../images/fun-facts/Gold.jpeg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.d {
+  background-image: url('../../images/fun-facts/Library.jpg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.e {
+  background-image: url('../../images/fun-facts/FirstCapital.jpeg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.f {
+  background-image: url('../../images/fun-facts/Population.webp');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.g {
+  background-image: url('../../images/fun-facts/Pizza.jpg');
+  background-size: cover;
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
+}
+
+.fun-facts .grid-item.h {
+  background-image: url('../../images/fun-facts/money.jpg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.i {
+  background-image: url('../../images/fun-facts/Coastline.jpg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.j {
+  background-image: url('../../images/fun-facts/Library.jpg');
+  background-size: cover;
+}
+
+.fun-facts .grid-item.k {
+  background-image: url('../../images/fun-facts/Library.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 1235px) {
+  .fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 225px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 985px) {
+  .fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 225px);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  .fun-facts .grid-item.a {
+    grid-column: 1 / 3;
+    grid-row: unset;
+  }
+
+  .fun-facts .grid-item.g {
+    grid-column: unset;
+    grid-row: 3 / 5;
+  }
+}
+
+@media (max-width: 768px) {
+  .fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 225px);
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .fun-facts .grid-item.a {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .fun-facts .grid-item.g {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+
+@media (max-width: 515px) {
+  .fun-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(10, 225px);
+  }
+
+  .fun-facts .grid-item.a {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .fun-facts .grid-item.g {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}

@@ -1,0 +1,121 @@
+.five-boroughs {
+  position: relative;
+  justify-content: center;
+  gap: 7rem;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../../images/five-boroughs//Background.png');
+  background-size: cover;
+}
+
+.five-boroughs h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.five-boroughs .slide {
+  height: 500px;
+  display: flex;
+  gap: 1rem;
+}
+
+.five-boroughs .info-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.five-boroughs .title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.five-boroughs .description {
+  width: 500px;
+  line-height: 2rem;
+}
+
+.five-boroughs .img-wrapper {
+  border-radius: 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 140px;
+  overflow: hidden;
+  flex: 1;
+  transition: flex 0.3s ease, border-radius 0.2s ease;
+  border: 4px #fff solid;
+}
+
+.five-boroughs .img-wrapper.active {
+  border-radius: 1.5rem;
+  flex: 8;
+}
+
+.five-boroughs .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(125%);
+}
+
+@media (max-width: 1450px) {
+  .five-boroughs h2 {
+    text-align: left;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    opacity: 0.5;
+  }
+
+  .five-boroughs .info-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .five-boroughs .description {
+    max-width: 900px;
+    width: 100%;
+    height: 125px;
+  }
+}
+
+@media (max-width: 865px) {
+  .five-boroughs .description {
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .five-boroughs .description {
+    height: 180px;
+  }
+}
+
+@media (max-width: 510px) {
+  .five-boroughs .description {
+    height: 210px;
+  }
+
+  .five-boroughs h2 {
+    padding-left: 1rem;
+  }
+
+  .five-boroughs .info-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .five-boroughs .description {
+    height: 250px;
+  }
+}

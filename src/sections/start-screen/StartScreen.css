@@ -1,0 +1,101 @@
+.start-screen {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  height: 870px;
+}
+
+.start-screen .background-img {
+  position: absolute;
+  z-index: -10;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(150%);
+}
+
+.start-screen .left {
+  width: 575px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 4rem;
+}
+
+.nyc-title {
+  font-size: 8rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.start-screen-description {
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 1115px) {
+  .start-screen .left {
+    width: 100%;
+  }
+
+  .nyc-title {
+    text-align: center;
+    margin: 0;
+    padding: 4rem;
+  }
+
+  .start-screen-description {
+    line-height: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .start-screen .left {
+    padding: 0;
+  }
+}
+
+@media (max-width: 810px) {
+  .nyc-title {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .nyc-title {
+    font-size: 5rem;
+    padding: 2rem;
+  }
+
+  .start-screen-description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .start-screen-description {
+    line-height: 1.75rem;
+  }
+}

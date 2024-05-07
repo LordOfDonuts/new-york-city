@@ -1,0 +1,124 @@
+.timeline {
+  display: flex;
+  min-height: 100vh;
+}
+
+.timeline .background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.timeline .left {
+  width: 60%;
+}
+
+.timeline .right {
+  width: 40%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline .right img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.timeline h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.timeline h3 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.timeline .description {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-dots {
+  width: 5px;
+  min-height: 800px;
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.event-dot {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #000;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.event-dot.active {
+  border: 5px solid #fff;
+}
+
+.event-date {
+  background-color: black;
+  width: 65px;
+  height: 45px;
+  position: absolute;
+  right: 35px;
+  top: -12px;
+  border-radius: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+}
+
+.event-name {
+  background-color: black;
+  width: 165px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 60px;
+  position: absolute;
+  left: 45px;
+  top: -20px;
+  border-radius: 1rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.event-name,
+.event-date {
+  transition: 0.25s opacity ease;
+}
+
+.event-dot:hover .event-name, .event-dot.active .event-name,
+.event-dot:hover .event-date, .event-dot.active .event-date {
+  opacity: 1;
+}
