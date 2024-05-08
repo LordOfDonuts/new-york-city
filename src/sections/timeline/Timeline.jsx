@@ -38,7 +38,7 @@ const Timeline = () => {
     },
     {
       date: '1860s',
-      name: 'New York City draft riots',
+      name: 'New York City Draft Riots',
       description:
         'The New York City Draft Riots of 1863 were a violent uprising primarily by working-class Irish immigrants against the Civil War draft and its disproportionate impact on the poor. Lasting five days, it resulted in widespread destruction, with rioters targeting symbols of wealth, abolitionists, and African Americans. It exposed deep social and racial tensions, leading to reforms in the draft system and highlighting the need for addressing social inequalities.',
       img: Riots,
@@ -59,14 +59,14 @@ const Timeline = () => {
     },
     {
       date: '1911',
-      name: 'Triangle Shirtwaist Factory fire',
+      name: 'Triangle Shirtwaist Factory Fire',
       description:
         'The Triangle Shirtwaist Factory fire occurred on March 25, 1911, in New York City. It was one of the deadliest industrial disasters in U.S. history, claiming the lives of 146 garment workers, mostly young immigrant women. The fire was caused by unsafe working conditions, including locked exit doors and inadequate fire escapes. This tragedy led to widespread reforms in labor laws and workplace safety regulations, sparking a movement for improved working conditions and labor rights.',
       img: FactoryFire,
     },
     {
       date: '2001',
-      name: 'September 11 attacks',
+      name: 'September 11 Attacks',
       description:
         'The September 11 attacks, often referred to as 9/11, were a series of coordinated terrorist attacks by the Islamic extremist group al-Qaeda against the United States on September 11, 2001. Four commercial airliners were hijacked by 19 terrorists, resulting in the destruction of the Twin Towers of the World Trade Center in New York City and significant damage to the Pentagon in Arlington, Virginia. Nearly 3,000 people were killed in the attacks, including passengers and crew aboard the airplanes as well as first responders and civilians in the targeted buildings. The attacks led to profound changes in U.S. foreign and domestic policy, including the launch of the War on Terror and increased security measures.',
       img: September11,

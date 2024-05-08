@@ -3,6 +3,7 @@
   width: 100vw;
   min-height: 100vh;
   height: 870px;
+  overflow: hidden;
 }
 
 .start-screen .background-img {

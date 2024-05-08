@@ -1,6 +1,7 @@
 .timeline {
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .timeline .background-img {
