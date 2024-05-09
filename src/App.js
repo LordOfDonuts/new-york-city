@@ -6,10 +6,12 @@ import Timeline from './sections/timeline/Timeline';
 import PlacesToVisit from './sections/places-to-visit/PlacesToVisit';
 
 import SectionTransition from './components/SectionTransition';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
     <div>
+      <NavigationBar />
       <StartScreen />
       <SectionTransition />
       <Timeline />

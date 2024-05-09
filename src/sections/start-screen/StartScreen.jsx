@@ -10,7 +10,7 @@ import BackgroundLarge from '../../images/start-screen/BackgroundLarge.jpg';
 
 const StartScreen = () => {
   return (
-    <div className='start-screen'>
+    <div className='start-screen' id='start-screen'>
       <img
         src={BackgroundSmall}
         alt=''

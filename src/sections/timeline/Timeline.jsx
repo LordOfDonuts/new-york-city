@@ -74,7 +74,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div className='timeline'>
+    <div className='timeline' id='timeline'>
       <img src={Background} alt='' className='background-img' />
       <div className='left'>
         <h2>Important Events in NYC History</h2>

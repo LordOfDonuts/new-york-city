@@ -45,7 +45,7 @@ const FiveBoroughs = () => {
   const [activeImage, setActiveImage] = useState(0);
 
   return (
-    <div className='five-boroughs'>
+    <div className='five-boroughs' id='five-boroughs'>
       <h2>About the Five Boroughs</h2>
       <div className='info-container'>
         <div className='slide'>

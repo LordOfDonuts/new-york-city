@@ -4,7 +4,7 @@ import React from 'react';
 
 const FunFacts = () => {
   return (
-    <div className='fun-facts'>
+    <div className='fun-facts' id='fun-facts'>
       <h2>Fun Facts About NYC</h2>
       <div className='fun-facts-grid'>
         <div className='grid-item a'>

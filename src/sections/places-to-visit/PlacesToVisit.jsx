@@ -95,7 +95,7 @@ const PlacesToVisit = () => {
   };
 
   return (
-    <div className='places-to-visit'>
+    <div className='places-to-visit' id='places-to-visit'>
       <img src={Background} alt='' className='background-img' />
       <h2>Places to Visit in NYC</h2>
       <div className='places-container'>
