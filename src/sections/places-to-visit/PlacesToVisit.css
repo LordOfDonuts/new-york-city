@@ -48,6 +48,7 @@
 .places-to-visit .place-text {
   flex: 1;
   padding: 5rem;
+  align-self: flex-start;
 }
 
 .places-to-visit .place-name {
@@ -156,6 +157,138 @@
   transition: background-color 0.25s ease;
 }
 
-.places-to-visit .dot.active, .places-to-visit .dot:hover{
+.places-to-visit .dot.active,
+.places-to-visit .dot:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1490px) {
+  .places-to-visit .default-card-container {
+    width: 300px;
+    height: 500px;
+  }
+
+  .default-card-container .card.left {
+    transform: translateX(-100px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-left {
+    transform: translateX(-100px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.central {
+    transform: translateX(0) rotateY(0) scale(1);
+  }
+
+  .default-card-container .card.right {
+    transform: translateX(100px) rotateY(-25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-right {
+    transform: translateX(100px) rotateY(-25deg) scale(0.85);
+  }
+}
+
+@media (max-width: 1160px) {
+  .places-to-visit .place-text {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  .places-to-visit .places-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .places-to-visit .place-description {
+    line-height: 1.5rem;
+  }
+  .places-to-visit .place-text {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 530px) {
+  .places-to-visit h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .default-card-container .card.left {
+    transform: translateX(-70px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-left {
+    transform: translateX(-70px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.central {
+    transform: translateX(0) rotateY(0) scale(1);
+  }
+
+  .default-card-container .card.right {
+    transform: translateX(70px) rotateY(-25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-right {
+    transform: translateX(70px) rotateY(-25deg) scale(0.85);
+  }
+}
+
+@media (max-width: 440px) {
+  .places-to-visit .place-text {
+    min-height: 550px;
+  }
+
+  .places-to-visit .default-card-container {
+    width: 200px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 410px) {
+  .places-to-visit .place-text {
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 370px) {
+  .places-to-visit .place-text {
+    min-height: 750px;
+  }
+}
+
+@media (max-width: 340px) {
+  .places-to-visit .place-text {
+    min-height: 800px;
+  }
+  .default-card-container .card.left {
+    transform: translateX(-60px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-left {
+    transform: translateX(-60px) rotateY(25deg) scale(0.85);
+  }
+
+  .default-card-container .card.central {
+    transform: translateX(0) rotateY(0) scale(1);
+  }
+
+  .default-card-container .card.right {
+    transform: translateX(60px) rotateY(-25deg) scale(0.85);
+  }
+
+  .default-card-container .card.previous-right {
+    transform: translateX(60px) rotateY(-25deg) scale(0.85);
+  }
+
+  .places-to-visit .cards-navigate {
+    gap: 0.75rem;
+  }
+  
 }
